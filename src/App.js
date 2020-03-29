@@ -1,24 +1,19 @@
 import React from 'react';
 import  Navvie from './components/Navvie';
+import  Main from './components/MainScroll';
+import  About from './components/About';
+import  SPBwls from './components/Spbwls';
+import  WNew from './components/Newnew';
 import  Footer from './components/Footer';
 
 function App() {
   return (
     <div className="App">
     <Navvie />
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Main />
+      <About />
+      <SPBwls />
+      <WNew />
       <Footer />
     </div>
   );
