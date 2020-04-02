@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button, Row, Col } from 'react-bootstrap';
+import { Row, Col } from 'react-bootstrap';
 
 class About extends Component {
     trig = () => {
@@ -31,7 +31,41 @@ class About extends Component {
                         </Col>
                     </Row>
                 </div>
-            <Button onClick = {this.trig}>Hey</Button>
+                <div className="container">
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+                        Order Now
+                    </button>
+                </div>
+
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+    <div class="mb-auto">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      <div class="card-deck">
+  <div class="card">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body text-center">
+      <h5 class="card-title">Delievery</h5>
+      <button className= "btn btn-primary">For Delievery</button>
+    </div>
+  </div>
+  <div class="card">
+    <img src="..." class="card-img-top" alt="..." />
+    <div class="card-body text-center">
+      <h5 class="card-title">Pickup</h5>
+      <button className= "btn btn-primary">For Pickup</button>
+    </div>
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</div>
             </div> 
             );
         }
